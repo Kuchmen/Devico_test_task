@@ -1,14 +1,8 @@
 (async function () {
 
-    // const response = await fetch('our-honey-products.json');
-    // const animals = await response.json();
-
-    const animals = {
-        'pigs': 6,
-        'chickens': 12,
-        'cows': 21
-        };
-    
+    const response = await fetch('animals.json');
+    const animals = await response.json();
+        
     const legs = {
         'pigs': 4,
         'chickens': 2,
@@ -20,5 +14,4 @@
     document.getElementById('animals').innerText = result;
 
     console.log(result);
-
 })();
